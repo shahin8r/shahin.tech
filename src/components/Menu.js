@@ -3,6 +3,7 @@ import Styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import Colors from '../colors'
+import SocialIcons from './SocialIcons'
 
 const Menu = Styled.ul`
   list-style: none;
@@ -34,10 +35,14 @@ const partiallyActive = () => ({ isPartiallyCurrent }) => ({
 })
 
 export default () => (
-  <Menu>
-    <Link activeClassName="active" to="/"><MenuItem>About</MenuItem></Link>
-    <Link activeClassName="active" to="/blog" getProps={partiallyActive('active')}><MenuItem>Blog</MenuItem></Link>
-    <Link activeClassName="active" to="/work"><MenuItem>Work</MenuItem></Link>
-    <Link activeClassName="active" to="/social"><MenuItem>Social</MenuItem></Link>
-  </Menu>
+  <div>
+    <Menu>
+      <Link activeClassName="active" to="/"><MenuItem>About</MenuItem></Link>
+      <Link activeClassName="active" to="/blog" getProps={partiallyActive('active')}><MenuItem>Blog</MenuItem></Link>
+      <Link activeClassName="active" to="/work"><MenuItem>Work</MenuItem></Link>
+      <Link activeClassName="active" to="/social"><MenuItem>Social</MenuItem></Link>
+    </Menu>
+
+    <SocialIcons />
+  </div>
 )
