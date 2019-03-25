@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 
 import Colors from './colors'
 import Avatar from './components/Avatar'
+import AvatarImage from './images/shahin.jpeg'
 import HireBtn from './components/HireBtn'
 import Menu from './components/Menu'
 import HeaderTitle from './components/HeaderTitle'
@@ -66,7 +67,7 @@ const Footer = Styled.footer`
 export default ({ siteTitle, children }) => (
   <Layout>
     <Sidebar>
-      <Avatar src={ `/assets/shahin.jpg` } />
+      <Avatar src={AvatarImage} />
       
       <Link to="/hire">
         <HireBtn>Hire me</HireBtn>
