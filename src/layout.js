@@ -40,6 +40,7 @@ const Main = Styled.main`
   vertical-align: top;
   padding: 2rem 1rem 2rem 4rem;
   max-width: 100%;
+  min-width: 0;
 
   h2 {
     line-height: 3rem;
