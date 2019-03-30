@@ -49,7 +49,7 @@ export const pageQuery = graphql`
             slug
             title
             featuredImage {
-              sourceUrl
+              sourceUrl(size:PROJECT)
             }
             content
           }
