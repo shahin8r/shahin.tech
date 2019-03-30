@@ -10,6 +10,6 @@ export default () => (
 
       <p>Right now I'm fully booked but will be available as of {Availibility()} again.</p>
 
-      <p>Send me an email at <a href="mailto:hello@shahin.tech?subject=Let us do some awesome work together!">hello@shahin.tech</a> and let's get the ball rolling.</p>
+      <p>Send me an email at <a href="mailto:hello@shahin.tech?subject=Let us do some awesome work together!">hello@shahin.tech</a> or book a <a href="https://calendly.com/shahin-tech/30min">consultation call</a> and let's get the ball rolling.</p>
   </Layout>
 )

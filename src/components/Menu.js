@@ -40,7 +40,6 @@ export default () => (
       <Link activeClassName="active" to="/"><MenuItem>About</MenuItem></Link>
       <Link activeClassName="active" to="/blog" getProps={partiallyActive('active')}><MenuItem>Blog</MenuItem></Link>
       <Link activeClassName="active" to="/work"><MenuItem>Work</MenuItem></Link>
-      <Link activeClassName="active" to="/social"><MenuItem>Social</MenuItem></Link>
     </Menu>
 
     <SocialIcons />
