@@ -1,6 +1,8 @@
 import React from 'react'
 import Styled from 'styled-components'
 
+import ProjectBadge from './ProjectBadge'
+
 const ProjectWrapper = Styled.article`
   flex: 0 0 48%;
   margin: 1rem 0;
@@ -23,20 +25,29 @@ const ProjectTitle = Styled.h3`
 `
 
 const ProjectContent = Styled.div`
-  padding: 1rem;
   font-size: 1rem;
+  padding: 1rem;
 
   p {
     margin-top: 0;
   }
 `
 
-const Project = ({ title, slug, content, image }) => {
+const ProjectMeta = Styled.div`
+  padding: 0 1rem;
+`
+
+const Project = ({ title, slug, content, image, status, url, github }) => {
   return (
-    <ProjectWrapper key={slug}>
+    <ProjectWrapper>
       <ProjectImage src={image} />
       <ProjectTitle>{title}</ProjectTitle>
       <ProjectContent dangerouslySetInnerHTML={{ __html: content }} />
+      <ProjectMeta>
+        {status && <ProjectBadge status={status} />}
+        {url && <ProjectBadge url={url} />}
+        {github && <ProjectBadge github={github} />}
+      </ProjectMeta>
     </ProjectWrapper>
   )
 

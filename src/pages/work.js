@@ -16,20 +16,27 @@ const Work = ({ data }) => {
 
   return (
     <Layout siteTitle="Quality is <strong>passion</strong> and pride.">
-      <h3>Here are some of the things I'm working on.</h3>
+      <h2>Here are some of the things I'm working on.</h2>
       <ProjectsWrapper>
         {projects.map(({ node }) => {
           const slug = node.slug
           const title = node.title
           const content = node.content
           const image = node.featuredImage && node.featuredImage.sourceUrl
+          const status = node.projectStatus
+          const url = node.projectUrl
+          const github = node.projectGithub
 
           return (
             <Project
+              key={slug}
               slug={slug}
               title={title}
               content={content}
               image={image}
+              status={status}
+              url={url}
+              github={github}
             />
           )
         })}
@@ -52,6 +59,9 @@ export const pageQuery = graphql`
               sourceUrl(size:PROJECT)
             }
             content
+            projectStatus
+            projectGithub
+            projectUrl
           }
         }
       }
