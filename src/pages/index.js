@@ -16,7 +16,7 @@ export default ({ data }) => {
         
         <p>I do digital business solutions, that’s my thing. Wether it’s modifications to existing products or brand new websites or mobile apps.</p>
         
-        <p>Don’t miss out on my latest blog post, <Link to={`/blog/${latestBlogPost.slug}`} rel="bookmark">{latestBlogPost.title}</Link> or checking out what I’m up to on my <Link to="/social">social media accounts</Link>.</p>
+        <p>Don’t miss out on my latest blog post, <Link to={`/blog/${latestBlogPost.slug}`} rel="bookmark">{latestBlogPost.title}</Link> or checking out what I’m up to on my social media accounts.</p>
         
         <p>If you’re looking to work with me, I’m available as of {Availibility()}.</p>
     </Layout>
