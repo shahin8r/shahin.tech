@@ -67,7 +67,9 @@ const Footer = Styled.footer`
 export default ({ siteTitle, children }) => (
   <Layout>
     <Sidebar>
-      <Avatar src={AvatarImage} />
+      <Link to="/" style={{ border: 0 }}>
+        <Avatar src={AvatarImage} />
+      </Link>
       
       <Link to="/hire">
         <HireBtn>Hire me</HireBtn>
