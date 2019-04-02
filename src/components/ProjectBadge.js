@@ -27,6 +27,7 @@ const ProjectBadgeContent = Styled.span`
 
   a {
     color: #fff;
+    padding: 0.75rem 0rem;
 
     &:hover {
       border: 0;

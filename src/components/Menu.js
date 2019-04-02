@@ -9,24 +9,24 @@ const Menu = Styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-
-  a {
-    text-decoration: none;
-
-    &.active li {
-      color: ${Colors.text};
-    }
-  }
 `
 
 const MenuItem = Styled.li`
   line-height: 100%;
-  color: ${Colors.menu};
   font-size: 2.5rem;
   font-weight: bold;
 
-  &:hover {
-    color: ${Colors.text}
+  a {
+    color: ${Colors.menu};
+    text-decoration: none;
+
+    &.active {
+      color: ${Colors.text}
+    }
+
+    &:hover {
+      color: ${Colors.text}
+    }
   }
 `
 
@@ -37,9 +37,21 @@ const partiallyActive = () => ({ isPartiallyCurrent }) => ({
 export default () => (
   <div>
     <Menu>
-      <Link activeClassName="active" to="/"><MenuItem>About</MenuItem></Link>
-      <Link activeClassName="active" to="/blog" getProps={partiallyActive('active')}><MenuItem>Blog</MenuItem></Link>
-      <Link activeClassName="active" to="/work"><MenuItem>Work</MenuItem></Link>
+      <MenuItem>
+        <Link activeClassName="active" to="/">
+          About
+        </Link>
+      </MenuItem>
+      <MenuItem>
+        <Link activeClassName="active" to="/blog" getProps={partiallyActive('active')}>
+          Blog
+        </Link>
+      </MenuItem>
+      <MenuItem>
+        <Link activeClassName="active" to="/work">
+          Work
+        </Link>
+      </MenuItem>
     </Menu>
 
     <SocialIcons />

@@ -16,16 +16,6 @@ const Layout = Styled.div`
   padding: 0;
   margin: 5rem auto;
   color: ${Colors.text}
-
-  a {
-    color: ${Colors.link}
-    padding-bottom: 2px;
-    text-decoration: none;
-
-    &:hover {
-      border-bottom: 2px solid ${Colors.link};
-    }
-  }
 `
 
 const Sidebar = Styled.aside`
@@ -43,6 +33,16 @@ const Main = Styled.main`
   h2 {
     line-height: 3rem;
   }
+
+  a {
+    color: ${Colors.link}
+    padding-bottom: 2px;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid ${Colors.link};
+    }
+  }
 `
 
 const Footer = Styled.footer`
@@ -53,10 +53,12 @@ const Footer = Styled.footer`
   text-align: center;
 
   a {
-    color: #aaaaff;
+    color: ${Colors.link}
+    padding-bottom: 2px;
+    text-decoration: none;
 
     &:hover {
-      border-color: #aaaaff;
+      border-bottom: 2px solid ${Colors.link};
     }
   }
 `
@@ -65,7 +67,7 @@ export default ({ siteTitle, children }) => (
   <Layout>
     <Sidebar>
       <Link to="/" style={{ border: 0 }}>
-        <Avatar src={AvatarImage} />
+        <Avatar src={AvatarImage} alt="Shahin" />
       </Link>
       
       <Link to="/hire">
