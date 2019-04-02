@@ -4,6 +4,7 @@ import Styled from 'styled-components'
 
 import Layout from '../layout'
 import Project from '../components/Project'
+import SEO from '../components/SEO'
 
 const ProjectsWrapper = Styled.div`
   display: flex;
@@ -16,6 +17,7 @@ const Work = ({ data }) => {
 
   return (
     <Layout siteTitle="Quality is <strong>passion</strong> and pride.">
+      <SEO />
       <h2>Here are some of the things I'm working on.</h2>
       <ProjectsWrapper>
         {projects.map(({ node }) => {

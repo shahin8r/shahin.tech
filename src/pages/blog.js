@@ -5,6 +5,7 @@ import Styled from 'styled-components'
 
 import Layout from '../layout'
 import Colors from '../colors'
+import SEO from '../components/SEO'
 
 const Title = Styled.h2`
   margin-bottom: 0;
@@ -27,6 +28,7 @@ const Blog = ({ data }) => {
 
   return (
     <Layout siteTitle="The <strong>journey</strong> and the code.">
+      <SEO />
       <main>
         {posts.map(({ node }) => {
           const title = node.title
