@@ -25,7 +25,6 @@ const ProjectTitle = Styled.h3`
 `
 
 const ProjectContent = Styled.div`
-  font-size: 1rem;
   padding: 1rem;
 
   p {

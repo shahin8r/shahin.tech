@@ -20,7 +20,7 @@ const Menu = Styled.ul`
 `
 
 const MenuItem = Styled.li`
-  line-height: 150%;
+  line-height: 100%;
   color: ${Colors.menu};
   font-size: 2.5rem;
   font-weight: bold;

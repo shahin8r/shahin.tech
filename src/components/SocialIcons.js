@@ -6,7 +6,7 @@ import Colors from '../colors'
 const ListSocial = Styled.ul`
   background: 'red';
   list-style: none;
-  margin-top: 3rem;
+  margin: 3em 0 0;
   padding: 0;
 
   li {

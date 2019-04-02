@@ -11,6 +11,12 @@ module.exports = {
         fieldName: 'wp',
         url: process.env.WORDPRESS_GRAPHQL_URL
       }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
     }
   ]
 }

@@ -4,7 +4,7 @@ import Colors from '../colors'
 
 const HeaderTitle = Styled.h1`
   color: ${Colors.text};
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 0;
   line-height: 5rem;
   margin-bottom: 5.5rem;

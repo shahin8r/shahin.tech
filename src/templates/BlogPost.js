@@ -16,6 +16,8 @@ const Date = Styled.small`
 
 const BlogPostContainer = Styled.article`
 
+
+
 `
 
 const BlogPost = function Template({ data }) {
@@ -27,7 +29,7 @@ const BlogPost = function Template({ data }) {
       <BlogPostContainer className="blog-post">
         <Title>{post.title}</Title>
         <Date>Posted {date}</Date>
-        <main dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </BlogPostContainer>
     </Layout>
   )

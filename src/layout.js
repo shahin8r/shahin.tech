@@ -15,10 +15,7 @@ const Layout = Styled.div`
   max-width: 980px;
   padding: 0;
   margin: 5rem auto;
-  font-family: 'Ubuntu', sans-serif;
-  line-height: 200%;
   color: ${Colors.text}
-  font-size: 1.25rem;
 
   a {
     color: ${Colors.link}

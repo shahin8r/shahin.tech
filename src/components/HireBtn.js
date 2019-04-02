@@ -7,7 +7,7 @@ const HireBtn = Styled.button`
   background: ${Colors.primary};
   width: 11rem;
   height: 3rem;
-  margin: 2rem 0;
+  margin: 0 0 2rem 0;
   border-radius: 5px;
   border: 0;
   color: #fff;
