@@ -5,6 +5,7 @@ import moment from 'moment'
 
 import Layout from '../layout'
 import Colors from '../colors'
+import SEO from '../components/SEO'
 
 const Title = Styled.h2`
   margin-bottom: 0;
@@ -24,6 +25,11 @@ const BlogPost = function Template({ data }) {
 
   return (
     <Layout siteTitle="The <strong>journey</strong> and the code." >
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        slug={`/blog/${post.slug}`}
+      />
       <main>
         <article>
           <header>
@@ -47,6 +53,7 @@ export const pageQuery = graphql`
         slug
         date
         content
+        excerpt
       }
     }
   }
