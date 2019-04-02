@@ -14,10 +14,8 @@ const Date = Styled.small`
   color: ${Colors.menu}
 `
 
-const BlogPostContainer = Styled.article`
-
-
-
+const Content = Styled.div`
+  margin-top: 1rem;
 `
 
 const BlogPost = function Template({ data }) {
@@ -26,11 +24,15 @@ const BlogPost = function Template({ data }) {
 
   return (
     <Layout siteTitle="The <strong>journey</strong> and the code." >
-      <BlogPostContainer className="blog-post">
-        <Title>{post.title}</Title>
-        <Date>Posted {date}</Date>
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      </BlogPostContainer>
+      <main>
+        <article>
+          <header>
+            <Title>{post.title}</Title>
+            <Date>Posted {date}</Date>
+          </header>
+          <Content className="blog-post" dangerouslySetInnerHTML={{ __html: post.content }} />
+        </article>
+      </main>
     </Layout>
   )
 }

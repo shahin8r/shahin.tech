@@ -14,7 +14,11 @@ const Date = Styled.small`
   color: ${Colors.menu}
 `
 
-const BlogPostContaineer = Styled.article`
+const Content = Styled.div`
+  margin-top: 1rem;
+`
+
+const Post = Styled.article`
   border-bottom: 1px solid #eee;
 `
 
@@ -23,24 +27,25 @@ const Blog = ({ data }) => {
 
   return (
     <Layout siteTitle="The <strong>journey</strong> and the code.">
-    {posts.map(({ node }) => {
-      const title = node.title
-      const date = moment(node.date).format('MMMM Do, YYYY')
-      const slug = node.slug
-      const excerpt = node.excerpt
+      <main>
+        {posts.map(({ node }) => {
+          const title = node.title
+          const date = moment(node.date).format('MMMM Do, YYYY')
+          const slug = node.slug
+          const excerpt = node.excerpt
 
-      return (
-        <BlogPostContaineer key={slug}>
-          <Title><Link activeClassName="active" to={`/blog/${slug}`} >{title}</Link></Title>
-          <Date>Posted {date}</Date>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: excerpt
-            }}
-          />
-        </BlogPostContaineer>
-      )
-    })}
+          return (
+            <Post key={slug}>
+              <header>
+                <Title><Link activeClassName="active" to={`/blog/${slug}`} >{title}</Link></Title>
+                <Date>Posted {date}</Date>
+              </header>
+              <Content dangerouslySetInnerHTML={{ __html: excerpt }} />
+            </Post>
+          )
+        })}
+      </main>
+
     </Layout>
   )
 }
