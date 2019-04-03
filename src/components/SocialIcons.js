@@ -6,13 +6,13 @@ import Colors from '../colors'
 const ListSocial = Styled.ul`
   background: 'red';
   list-style: none;
-  margin: 3em 0 0;
+  margin: 1.5em 0 0;
   padding: 0;
 
   li {
     display: inline-block;
     margin: 0 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     a {
       color: ${Colors.menu};

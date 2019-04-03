@@ -4,7 +4,7 @@ import Styled from 'styled-components'
 import ProjectBadge from './ProjectBadge'
 
 const ProjectWrapper = Styled.article`
-  flex: 0 0 48%;
+  display: block;
   margin: 1rem 0;
   overflow: hidden;
   border-radius: 8px;
@@ -14,6 +14,7 @@ const ProjectWrapper = Styled.article`
 
 const ProjectImage = Styled.img`
   max-width: 100%;
+  width: 100%;
   height: auto;
   border: 1px solid #fafafa;
 `

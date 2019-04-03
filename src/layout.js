@@ -10,28 +10,27 @@ import Menu from './components/Menu'
 import HeaderTitle from './components/HeaderTitle'
 
 const Layout = Styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   max-width: 980px;
   padding: 0;
-  margin: 5rem auto;
-  color: ${Colors.text}
+  margin: 2rem auto;
+  color: ${Colors.text};
 `
 
 const Sidebar = Styled.aside`
-  flex: 1;
-  text-align: right;
+  display: block;
+  text-align: center;
 `
 
 const Main = Styled.main`
-  flex: 5;
+  display: block;
   vertical-align: top;
-  padding: 2rem 1rem 2rem 4rem;
+  padding: 1rem;
   max-width: 100%;
   min-width: 0;
 
   h2 {
-    line-height: 3rem;
+    line-height: 2.5rem;
   }
 
   a {
@@ -46,7 +45,7 @@ const Main = Styled.main`
 `
 
 const Footer = Styled.footer`
-  flex: 1 1 100%;
+  display: block;
   margin-top: 2rem;
   font-size: 0.8rem;
   color: #ccc;

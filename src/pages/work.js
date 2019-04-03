@@ -7,9 +7,6 @@ import Project from '../components/Project'
 import SEO from '../components/SEO'
 
 const ProjectsWrapper = Styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 `
 
 const Work = ({ data }) => {

@@ -8,12 +8,14 @@ import SocialIcons from './SocialIcons'
 const Menu = Styled.ul`
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 `
 
 const MenuItem = Styled.li`
+  display: inline-block;
+  margin: 0 0.5rem;
   line-height: 100%;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
 
   a {
