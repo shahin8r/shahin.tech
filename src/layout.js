@@ -15,11 +15,22 @@ const Layout = Styled.div`
   padding: 0;
   margin: 2rem auto;
   color: ${Colors.text};
+
+  @media (min-width: 980px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem auto;
+  }
 `
 
 const Sidebar = Styled.aside`
   display: block;
   text-align: center;
+
+  @media (min-width: 980px) {
+    flex: 1;
+    text-align: right;
+  }
 `
 
 const Main = Styled.main`
@@ -42,6 +53,15 @@ const Main = Styled.main`
       border-bottom: 2px solid ${Colors.link};
     }
   }
+
+  @media (min-width: 980px) {
+    flex: 5;
+    padding: 2rem 1rem 2rem 4rem;
+
+    h2 {
+      line-height: 3rem;
+    }
+  }
 `
 
 const Footer = Styled.footer`
@@ -59,6 +79,10 @@ const Footer = Styled.footer`
     &:hover {
       border-bottom: 2px solid ${Colors.link};
     }
+  }
+
+  @media (min-width: 980px) {
+    flex: 1 1 100%;
   }
 `
 

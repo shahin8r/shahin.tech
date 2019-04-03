@@ -22,6 +22,10 @@ const ListSocial = Styled.ul`
         border: 0;
       }
     }
+
+    @media (min-width: 980px) {
+      font-size: 2rem;
+    }
   }
 `
 

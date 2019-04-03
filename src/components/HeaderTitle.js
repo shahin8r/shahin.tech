@@ -12,6 +12,13 @@ const HeaderTitle = Styled.h1`
   strong {
     color: ${Colors.primary};
   }
+
+  @media (min-width: 980px) {
+    font-size: 2.5rem;
+    line-height: 5rem;
+    margin: 1.5rem 0 5.5rem;
+    text-align: left;
+  }
 `
 
 export default HeaderTitle

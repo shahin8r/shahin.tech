@@ -30,6 +30,12 @@ const MenuItem = Styled.li`
       color: ${Colors.text}
     }
   }
+
+  @media (min-width: 980px) {
+    display: block;
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+  }
 `
 
 const partiallyActive = () => ({ isPartiallyCurrent }) => ({

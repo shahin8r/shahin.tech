@@ -5,11 +5,16 @@ import ProjectBadge from './ProjectBadge'
 
 const ProjectWrapper = Styled.article`
   display: block;
-  margin: 1rem 0;
+  margin: 2rem 0;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
+
+  @media (min-width: 980px) {
+    flex: 0 0 48%;
+    margin: 1rem 0;
+  }
 `
 
 const ProjectImage = Styled.img`
