@@ -10,6 +10,15 @@ const typography = new Typography({
   bodyFontFamily: [
     'Ubuntu',
     'serif'
+  ],
+  googleFonts: [
+    {
+      name: 'Ubuntu',
+      styles: [
+        '700',
+        '400'
+      ]
+    }
   ]
 })
 
