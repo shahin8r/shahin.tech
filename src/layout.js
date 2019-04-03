@@ -45,7 +45,7 @@ const Main = Styled.main`
   }
 
   a {
-    color: ${Colors.link}
+    color: ${Colors.link};
     padding-bottom: 2px;
     text-decoration: none;
 
@@ -72,7 +72,7 @@ const Footer = Styled.footer`
   text-align: center;
 
   a {
-    color: ${Colors.link}
+    color: ${Colors.link};
     padding-bottom: 2px;
     text-decoration: none;
 
