@@ -5,7 +5,7 @@ import SEO from '../components/SEO'
 import ChromeAudit from '../images/chrome_audit.jpg'
 
 export default () => (
-  <Layout siteTitle="Made with and for <strong>open-source</strong>.">
+  <Layout siteTitle="Made with and for <strong>open source</strong>.">
     <SEO />
     <h2>Want juicy tech details?</h2>
 
