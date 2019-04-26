@@ -33,22 +33,22 @@ const SocialIcons = () => {
   return (
     <ListSocial>
       <li>
-        <a href="https://twitter.com/shahin8r">
+        <a href="https://twitter.com/shahin8r" aria-label="Twitter">
           <FaTwitter />
         </a>
       </li>
       <li>
-        <a href="https://instagram.com/shahin8r">
+        <a href="https://instagram.com/shahin8r" aria-label="Instagram">
           <FaInstagram />
         </a>
       </li>
       <li>
-        <a href="https://linkedin.com/in/shahin8r">
+        <a href="https://linkedin.com/in/shahin8r" aria-label="LinkedIn">
           <FaLinkedin />
         </a>
       </li>
       <li>
-        <a href="https://github.com/shahin8r">
+        <a href="https://github.com/shahin8r" aria-label="GitHub">
           <FaGithub />
         </a>
       </li>

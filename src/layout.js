@@ -67,7 +67,7 @@ const Footer = Styled.footer`
   display: block;
   margin-top: 2rem;
   font-size: 0.8rem;
-  color: #ccc;
+  color: ${Colors.text};
   text-align: center;
 
   a {
