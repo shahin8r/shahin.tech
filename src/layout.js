@@ -19,7 +19,6 @@ const Layout = Styled.div`
   @media (min-width: 980px) {
     display: flex;
     flex-wrap: wrap;
-    margin: 5rem auto;
   }
 `
 

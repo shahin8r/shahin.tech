@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'shahin.tech',
     author: 'Shahin A',
-    description: 'A freelance developer from Sweden with a special love for WordPress and JavaScript.',
+    description: 'A freelance full-stack developer from Sweden with a special love for WordPress and JavaScript',
     siteUrl: 'https://shahin.tech',
     social: {
       twitter: '@shahin8r',
