@@ -1,7 +1,7 @@
 {
-  "name": "shahin8r-freelance-dev",
+  "name": "shahin-tech",
   "private": true,
-  "description": "A simple website for freelance developers.",
+  "description": "A simple website for shahin.tech",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -29,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/shahin8r/shahin.tech"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/shahin8r/shahin.tech/issues"
   }
 }
