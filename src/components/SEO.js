@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
+import AvatarImage from '../images/shahin.jpeg'
+
 const query = graphql`
   query GetSiteMetadata {
     site {
@@ -46,6 +48,10 @@ const SEO = ({ meta, title, description, slug }) => {
               {
                 name: 'description',
                 content: metaDescription
+              },
+              {
+                property: 'og:image',
+                content: `${siteMetadata.siteUrl}${AvatarImage}`
               },
               {
                 property: 'og:url',
